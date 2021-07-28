@@ -12,6 +12,12 @@ tr td {
   text-align: center;
 }
 th {
-  padding: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 8px !important;
   text-align: center !important;
+  font-size: 130%;
+}
+button {
+  background-color: #bbbbff;
+  padding: 8px 12px 8px 12px;
+  border-radius: 7px;
 }
