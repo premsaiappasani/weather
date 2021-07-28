@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather@u</title>
     <link rel="stylesheet" href="Css/style.css" />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <div id="demo"></div>
+    <div>
+      <img src="images/pin.png" alt="pin" />
+      <span id="city">City</span>
+      <span id="demo"></span>
+    </div>
+    <br />
     <div>
       <button type="button" onclick="getLocation()">Get Coordinates</button>
     </div>
+    <br />
+    <div>
+      <span id="imgspan"></span>
+      <span id="desc"></span>
+    </div>
+    <br />
     <div id="tablediv">
       <table>
         <tbody id="tbody">
