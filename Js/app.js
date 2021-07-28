@@ -38,7 +38,7 @@ function fn1(data){
     document.getElementById('imgspan').appendChild(img);
     document.getElementById('desc').innerHTML=`${data.weather[0].description}`;
     document.getElementById('t1').innerHTML="<th>Weather</th>";
-    document.getElementById('t2').innerHTML="<th>Temp</th>";
+    document.getElementById('t2').innerHTML="<th>Temperature</th>";
     document.getElementById('t3').innerHTML="<th>Wind</th>";
     document.getElementById('t4').innerHTML="<th>Other Parameters</th>";
     var tr = `<tr><td>${data.name}</td></tr><tr><td>${data.weather[0].main}</td></tr>`
