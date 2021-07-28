@@ -45,9 +45,9 @@ function fn1(data){
     weath.innerHTML=tr;
     tr=`<tr><td>Temperature-${data.main.temp}&deg;C</td></tr><tr><td>Feels like ${data.main.feels_like}&deg;C</td></tr>`;
     temp.innerHTML=tr;
-    tr=`<tr><td>speed-${data.wind.speed}</td></tr><tr><td>deg-${data.wind.deg}</td></tr>`;
+    tr=`<tr><td>Wind speed-${data.wind.speed}</td></tr><tr><td>Angle-${data.wind.deg}</td></tr>`;
     wind.innerHTML=tr;
-    tr=`<tr><td>pressure-${data.main.pressure}</td></tr><tr><td>humidity-${data.main.humidity}</td>`;
+    tr=`<tr><td>Pressure-${data.main.pressure}</td></tr><tr><td>Humidity-${data.main.humidity}</td>`;
     loc.innerHTML=tr;
   }
 function showError(error) {
