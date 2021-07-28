@@ -1,5 +1,5 @@
 var x = document.getElementById("demo");
-
+var key = config.key;
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -13,7 +13,7 @@ function showPosition(position) {
   var lon = position.coords.longitude;
   x.innerHTML = lat + "," + lon;
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=03726f5cd722d41eadd473bf9a6331d2`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
   )
     .then((res) => {
       return res.json();
